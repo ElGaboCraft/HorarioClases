@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const starsContainer = document.createElement("div");
   starsContainer.className = "stars";
 
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 1500; i++) {
     const star = document.createElement("span");
     star.style.width = Math.random() * 3 + "px";
     star.style.height = star.style.width;
