@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+  z-index: 1;
 }
 .class-card {
   transition: all 0.3s ease;
