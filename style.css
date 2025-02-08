@@ -30,7 +30,6 @@ body {
   height: 100%;
   z-index: -1;
 }
-
 /* Efecto de estrellas parpadeantes */
 .stars::before,
 .stars::after {
