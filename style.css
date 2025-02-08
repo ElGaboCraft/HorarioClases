@@ -3,6 +3,7 @@ body {
   background: linear-gradient(to bottom, #000428 0%, #000318 100%);
   overflow-x: hidden;
   position: relative;
+  min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
 }
 .class-card {
   transition: all 0.3s ease;
@@ -25,10 +26,12 @@ body {
   color: rgb(255, 255, 255);
 }
 .stars {
-  position: fixed;
+  position: absolute; /* Cambiado de fixed a absolute */
   width: 100%;
   height: 100%;
   z-index: -1;
+  top: 0;
+  left: 0;
 }
 /* Efecto de estrellas parpadeantes */
 .stars::before,
