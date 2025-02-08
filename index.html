@@ -14,106 +14,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <style>
-      body {
-        margin: 0;
-        background: linear-gradient(to bottom, #000428 0%, #000318 100%);
-        overflow-x: hidden;
-        position: relative;
-      }
-      .class-card {
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-      .class-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-      }
-      .teacher-name {
-        font-size: 0.9em;
-        color: #6c757d;
-      }
-      .schedule-day {
-        background-color: none;
-        border-radius: 10px;
-        border: 2px dashed white;
-        padding: 20px;
-        margin-bottom: 30px;
-        color: rgb(255, 255, 255);
-      }
-      .stars {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-
-      /* Efecto de estrellas parpadeantes */
-      .stars::before,
-      .stars::after {
-        content: "";
-        position: absolute;
-        width: 3px;
-        height: 3px;
-        background: white;
-        border-radius: 50%;
-        animation: twinkle 1.5s infinite ease-in-out;
-      }
-
-      .stars::before {
-        top: 20%;
-        left: 25%;
-        animation-delay: 0.5s;
-      }
-
-      .stars::after {
-        top: 60%;
-        left: 70%;
-        animation-delay: 1s;
-      }
-
-      @keyframes twinkle {
-        0%,
-        100% {
-          opacity: 0.3;
-        }
-        50% {
-          opacity: 1;
-        }
-      }
-      .stars span {
-        position: absolute;
-        background: white;
-        border-radius: 50%;
-        animation: twinkle 1.5s infinite ease-in-out;
-      }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const starsContainer = document.createElement('div');
-            starsContainer.className = 'stars';
-            
-            for(let i = 0; i < 150; i++) {
-                const star = document.createElement('span');
-                star.style.width = Math.random() * 3 + 'px';
-                star.style.height = star.style.width;
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.animationDelay = Math.random() * 2 + 's';
-                starsContainer.appendChild(star);
-            }
-            
-            document.body.prepend(starsContainer);
-        });
-        </script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body class="bg-black">
     <div class="stars">
       <div class="container py-5" style="position: relative; z-index: 1">
-        <h1 class="text-center mb-5 animate__animated animate__fadeInDown text-white">
+        <h1
+          class="text-center mb-5 animate__animated animate__fadeInDown text-white"
+        >
           Horario de Clases
         </h1>
-        <h1 class="text-center mb-5 animate__animated animate__fadeInDown text-white">
+        <h1
+          class="text-center mb-5 animate__animated animate__fadeInDown text-white"
+        >
           2do Bachillerato Ciencias
         </h1>
 
@@ -121,7 +35,7 @@
           <!-- Lunes -->
           <div class="col-md-4 mb-4">
             <div class="schedule-day animate__animated animate__fadeIn">
-              <h3 class="text-center mb-4" >Lunes</h3>
+              <h3 class="text-center mb-4">Lunes</h3>
               <!-- Clase 1 -->
               <a href="#link-clase" class="text-decoration-none">
                 <div class="class-card card mb-3">
