@@ -3,7 +3,7 @@ body {
   background: linear-gradient(to bottom, #000428 0%, #000318 100%);
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+  min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla  */
   z-index: 1;
 }
 .class-card {
